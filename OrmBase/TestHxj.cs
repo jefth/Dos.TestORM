@@ -26,29 +26,29 @@ namespace OrmTest
     public class TestHxj
     {
         public static readonly DbSession DBsession = new DbSession("conn1");
-        static TestHxj()
-        {
-            DBsession.RegisterSqlLogger(delegate(string sql)
-            {
-                var path = AppDomain.CurrentDomain.BaseDirectory + "\\Logs\\TestHxj" + DateTime.Now.ToString("yyyyMMdd") + ".txt";
-                var di = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\Logs\\");
-                if (!di.Exists)
-                {
-                    di.Create();
-                }
-                using (var fs = new FileStream(path, FileMode.Append, FileAccess.Write))
-                {
-                    var sw = new StreamWriter(fs);
-                    sw.Write(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-                    sw.WriteLine();
-                    sw.Write(sql);
-                    sw.WriteLine();
-                    sw.Write("-----------------------------------------------------------------------------");
-                    sw.WriteLine();
-                    sw.Flush();
-                    sw.Close();
-                }
-            });
-        }
+        //static TestHxj()
+        //{
+        //    DBsession.RegisterSqlLogger(delegate(string sql)
+        //    {
+        //        var path = AppDomain.CurrentDomain.BaseDirectory + "\\Logs\\TestHxj" + DateTime.Now.ToString("yyyyMMdd") + ".txt";
+        //        var di = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory + "\\Logs\\");
+        //        if (!di.Exists)
+        //        {
+        //            di.Create();
+        //        }
+        //        using (var fs = new FileStream(path, FileMode.Append, FileAccess.Write))
+        //        {
+        //            var sw = new StreamWriter(fs);
+        //            sw.Write(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+        //            sw.WriteLine();
+        //            sw.Write(sql);
+        //            sw.WriteLine();
+        //            sw.Write("-----------------------------------------------------------------------------");
+        //            sw.WriteLine();
+        //            sw.Flush();
+        //            sw.Close();
+        //        }
+        //    });
+        //}
     }
 }
