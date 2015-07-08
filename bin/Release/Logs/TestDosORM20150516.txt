@@ -1,0 +1,25 @@
+2015-05-16 00:00:23
+Text:	 SELECT   [TestTable].*,[Product].[ID] AS [PID],[Product].[Name],[Product].[TestTableId] FROM [TestTable] LEFT OUTER JOIN [Product] ON ([TestTable].[ID] = [Product].[TestTableId])  	
+
+
+-----------------------------------------------------------------------------
+2015-05-16 00:02:14
+Text:	 SELECT   [TestTable].*,[Product].[ID] AS [PID],[Product].[Name],[Product].[TestTableId] FROM [TestTable] LEFT OUTER JOIN [Product] ON ([TestTable].[ID] = [Product].[TestTableId])  	
+
+
+-----------------------------------------------------------------------------
+2015-05-16 00:02:57
+Text:	 SELECT   [TestTable].*,[Product].[ID] AS [PID],[Product].[Name],[Product].[TestTableId] FROM [TestTable] INNER JOIN [Product] ON ([TestTable].[ID] = [Product].[TestTableId])  	
+
+
+-----------------------------------------------------------------------------
+2015-05-16 00:03:43
+Text:	 SELECT   [TestTable].*,[Product].[ID] AS [PID],[Product].[Name],[Product].[TestTableId] FROM [TestTable] INNER JOIN [Product] ON ([TestTable].[ID] = [Product].[TestTableId])  	
+
+
+-----------------------------------------------------------------------------
+2015-05-16 00:05:03
+Text:	 SELECT   [TestTable].*,[Product].[ID] AS [PID],[Product].[Name] FROM [TestTable] INNER JOIN [Product] ON ([TestTable].[ID] = [Product].[TestTableId])  	
+
+
+-----------------------------------------------------------------------------

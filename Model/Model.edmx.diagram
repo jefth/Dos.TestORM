@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="72515c436cf747bb8d6514c1684ff3a6" Name="关系图1" >
+        <EntityTypeShape EntityType="EFModel.Product" Width="1.5" PointX="1.1869287421865988" PointY="18.191334226257791" />
+        <EntityTypeShape EntityType="EFModel.TestTable" Width="1.5" PointX="8.627047658258606" PointY="17.795401760281717" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

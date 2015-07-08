@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EFModelStoreContainer" CdmEntityContainer="ITdosEntities">
+    <EntitySetMapping Name="TestTable">
+      <EntityTypeMapping TypeName="EFModel.TestTable">
+        <MappingFragment StoreEntitySet="TestTable">
+          <ScalarProperty Name="c7" ColumnName="c7" />
+          <ScalarProperty Name="c6" ColumnName="c6" />
+          <ScalarProperty Name="c5" ColumnName="c5" />
+          <ScalarProperty Name="c4" ColumnName="c4" />
+          <ScalarProperty Name="c3" ColumnName="c3" />
+          <ScalarProperty Name="c2" ColumnName="c2" />
+          <ScalarProperty Name="c1" ColumnName="c1" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EFModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="EFModelStoreContainer">
+    <EntitySet Name="Product" EntityType="EFModel.Store.Product" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TestTable" EntityType="EFModel.Store.TestTable" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="TestTableId" Type="uniqueidentifier" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TestTable">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="c1" Type="varchar" MaxLength="500" />
+    <Property Name="c2" Type="varchar" MaxLength="500" />
+    <Property Name="c3" Type="varchar" MaxLength="500" />
+    <Property Name="c4" Type="varchar" MaxLength="500" />
+    <Property Name="c5" Type="varchar" MaxLength="500" />
+    <Property Name="c6" Type="varchar" MaxLength="500" />
+    <Property Name="c7" Type="varchar" MaxLength="500" />
+    <Property Name="c8" Type="nchar" MaxLength="10" />
+    <Property Name="c9" Type="bigint" />
+    <Property Name="c10" Type="nchar" MaxLength="10" />
+    <Property Name="c11" Type="ntext" />
+    <Property Name="c12" Type="numeric" />
+    <Property Name="c13" Type="text" />
+    <Property Name="c14" Type="uniqueidentifier" />
+    <Property Name="c15" Type="int" />
+    <Property Name="c16" Type="bit" />
+    <Property Name="c17" Type="char" MaxLength="10" />
+    <Property Name="c18" Type="datetime" />
+    <Property Name="c19" Type="float" />
+    <Property Name="c20" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6013: 表/视图“OrmTest.dbo.Table 1”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+      
+      <EntityType Name="Table 1">
+        <Property Name="id" Type="nchar" MaxLength="10" />
+      </EntityType>
+      生成过程中发现错误:
+      警告 6013: 表/视图“OrmTest.dbo.Table_1 1 2   55”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+      
+      <EntityType Name="Table_1 1 2   55">
+        <Property Name="id" Type="nchar" MaxLength="10" />
+      </EntityType>-->
+</Schema>

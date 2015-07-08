@@ -1,0 +1,14 @@
+D:\工作\其它\Hxj.Data Source(1.7.4.7)\OrmTest\OrmTest\obj\Debug\OrmTest.csprojResolveAssemblyReference.cache
+D:\工作\其它\Hxj.Data Source(1.7.4.7)\OrmTest\OrmTest\bin\Debug\OrmTest.exe.config
+D:\工作\GitHub\Dos.TestORM\bin\Debug\OrmTest.exe.config
+D:\工作\GitHub\Dos.TestORM\bin\Debug\OrmTest.exe
+D:\工作\GitHub\Dos.TestORM\bin\Debug\OrmTest.pdb
+D:\工作\GitHub\Dos.TestORM\bin\Debug\Dos.ORM.dll
+D:\工作\GitHub\Dos.TestORM\bin\Debug\EntityFramework.dll
+D:\工作\GitHub\Dos.TestORM\bin\Debug\EntityFramework.SqlServer.dll
+D:\工作\GitHub\Dos.TestORM\bin\Debug\Hxj.Data.dll
+D:\工作\GitHub\Dos.TestORM\bin\Debug\Dos.ORM.xml
+D:\工作\GitHub\Dos.TestORM\bin\Debug\EntityFramework.xml
+D:\工作\GitHub\Dos.TestORM\bin\Debug\EntityFramework.SqlServer.xml
+D:\工作\GitHub\Dos.TestORM\obj\Debug\OrmTest.exe
+D:\工作\GitHub\Dos.TestORM\obj\Debug\OrmTest.pdb

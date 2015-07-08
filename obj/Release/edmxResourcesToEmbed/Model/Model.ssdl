@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EFModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="EFModelStoreContainer">
+    <EntitySet Name="TestTable" EntityType="EFModel.Store.TestTable" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="TestTable">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="c1" Type="varchar" MaxLength="500" />
+    <Property Name="c2" Type="varchar" MaxLength="500" />
+    <Property Name="c3" Type="varchar" MaxLength="500" />
+    <Property Name="c4" Type="varchar" MaxLength="500" />
+    <Property Name="c5" Type="varchar" MaxLength="500" />
+    <Property Name="c6" Type="varchar" MaxLength="500" />
+    <Property Name="c7" Type="varchar" MaxLength="500" />
+  </EntityType>
+</Schema>

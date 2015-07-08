@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EFModelStoreContainer" CdmEntityContainer="ITdosEntities">
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="EFModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TestTableId" ColumnName="TestTableId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestTable">
+      <EntityTypeMapping TypeName="EFModel.TestTable">
+        <MappingFragment StoreEntitySet="TestTable">
+          <ScalarProperty Name="c20" ColumnName="c20" />
+          <ScalarProperty Name="c19" ColumnName="c19" />
+          <ScalarProperty Name="c18" ColumnName="c18" />
+          <ScalarProperty Name="c17" ColumnName="c17" />
+          <ScalarProperty Name="c16" ColumnName="c16" />
+          <ScalarProperty Name="c15" ColumnName="c15" />
+          <ScalarProperty Name="c14" ColumnName="c14" />
+          <ScalarProperty Name="c13" ColumnName="c13" />
+          <ScalarProperty Name="c12" ColumnName="c12" />
+          <ScalarProperty Name="c11" ColumnName="c11" />
+          <ScalarProperty Name="c10" ColumnName="c10" />
+          <ScalarProperty Name="c9" ColumnName="c9" />
+          <ScalarProperty Name="c8" ColumnName="c8" />
+          <ScalarProperty Name="c7" ColumnName="c7" />
+          <ScalarProperty Name="c6" ColumnName="c6" />
+          <ScalarProperty Name="c5" ColumnName="c5" />
+          <ScalarProperty Name="c4" ColumnName="c4" />
+          <ScalarProperty Name="c3" ColumnName="c3" />
+          <ScalarProperty Name="c2" ColumnName="c2" />
+          <ScalarProperty Name="c1" ColumnName="c1" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

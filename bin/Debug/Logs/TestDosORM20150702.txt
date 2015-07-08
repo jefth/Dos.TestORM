@@ -1,0 +1,42 @@
+2015-07-02 14:23:09
+Text:	 SELECT   `O2O_CourseRelationCoach`.`course_id` FROM `O2O_CourseRelationCoach`  WHERE `O2O_CourseRelationCoach`.`CoachId` = @O2O_CourseRelationCoach_CoachId_1 	
+Parameters:
+?@O2O_CourseRelationCoach_CoachId_1[String] = c8a12742-5ade-4d78-9f8e-36a316f9d96a
+
+
+-----------------------------------------------------------------------------
+2015-07-02 14:29:43
+Text:	 SELECT   `O2O_CourseRelationCoach`.`course_id` FROM `O2O_CourseRelationCoach`  WHERE `O2O_CourseRelationCoach`.`CoachId` = @O2O_CourseRelationCoach_CoachId_1 	
+Parameters:
+?@O2O_CourseRelationCoach_CoachId_1[String] = c8a12742-5ade-4d78-9f8e-36a316f9d96a
+
+
+-----------------------------------------------------------------------------
+2015-07-02 14:30:32
+Text:	 SELECT   `O2O_CourseRelationCoach`.`course_id` FROM `O2O_CourseRelationCoach`  WHERE `O2O_CourseRelationCoach`.`CoachId` = @O2O_CourseRelationCoach_CoachId_1 	
+Parameters:
+?@O2O_CourseRelationCoach_CoachId_1[String] = c8a12742-5ade-4d78-9f8e-36a316f9d96a
+
+
+-----------------------------------------------------------------------------
+2015-07-02 14:33:34
+Text:	 SELECT   `O2O_CourseRelationCoach`.`course_id` FROM `O2O_CourseRelationCoach`  WHERE `O2O_CourseRelationCoach`.`CoachId` = @O2O_CourseRelationCoach_CoachId_1 	
+Parameters:
+?@O2O_CourseRelationCoach_CoachId_1[String] = c8a12742-5ade-4d78-9f8e-36a316f9d96a
+
+
+-----------------------------------------------------------------------------
+2015-07-02 14:41:56
+Text:	 SELECT   `O2O_CourseRelationCoach`.`course_id` FROM `O2O_CourseRelationCoach`  WHERE `O2O_CourseRelationCoach`.`CoachId` = @O2O_CourseRelationCoach_CoachId_1 	
+Parameters:
+?@O2O_CourseRelationCoach_CoachId_1[String] = c8a12742-5ade-4d78-9f8e-36a316f9d96a
+
+
+-----------------------------------------------------------------------------
+2015-07-02 14:43:39
+Text:	 SELECT   `O2O_CourseRelationCoach`.`course_id` FROM `O2O_CourseRelationCoach`  WHERE `O2O_CourseRelationCoach`.`CoachId` = @O2O_CourseRelationCoach_CoachId_1 	
+Parameters:
+?@O2O_CourseRelationCoach_CoachId_1[String] = 21d1a3a4-3e3a-416f-9c39-a93ab290e96c
+
+
+-----------------------------------------------------------------------------

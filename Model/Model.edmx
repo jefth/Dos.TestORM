@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="EFModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="EFModelStoreContainer">
+          <EntitySet Name="Product" EntityType="EFModel.Store.Product" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TestTable" EntityType="EFModel.Store.TestTable" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="TestTableId" Type="uniqueidentifier" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TestTable">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="c1" Type="varchar" MaxLength="500" />
+          <Property Name="c2" Type="varchar" MaxLength="500" />
+          <Property Name="c3" Type="varchar" MaxLength="500" />
+          <Property Name="c4" Type="varchar" MaxLength="500" />
+          <Property Name="c5" Type="varchar" MaxLength="500" />
+          <Property Name="c6" Type="varchar" MaxLength="500" />
+          <Property Name="c7" Type="varchar" MaxLength="500" />
+          <Property Name="c8" Type="nchar" MaxLength="10" />
+          <Property Name="c9" Type="bigint" />
+          <Property Name="c10" Type="nchar" MaxLength="10" />
+          <Property Name="c11" Type="ntext" />
+          <Property Name="c12" Type="numeric" />
+          <Property Name="c13" Type="text" />
+          <Property Name="c14" Type="uniqueidentifier" />
+          <Property Name="c15" Type="int" />
+          <Property Name="c16" Type="bit" />
+          <Property Name="c17" Type="char" MaxLength="10" />
+          <Property Name="c18" Type="datetime" />
+          <Property Name="c19" Type="float" />
+          <Property Name="c20" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6013: 表/视图“OrmTest.dbo.Table 1”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+      
+      <EntityType Name="Table 1">
+        <Property Name="id" Type="nchar" MaxLength="10" />
+      </EntityType>
+      生成过程中发现错误:
+      警告 6013: 表/视图“OrmTest.dbo.Table_1 1 2   55”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+      
+      <EntityType Name="Table_1 1 2   55">
+        <Property Name="id" Type="nchar" MaxLength="10" />
+      </EntityType>-->
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EFModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ITdosEntities" annotation:LazyLoadingEnabled="true" >
+          <EntitySet Name="Product" EntityType="EFModel.Product" />
+          <EntitySet Name="TestTable" EntityType="EFModel.TestTable" />
+        </EntityContainer>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Guid" Name="ID" Nullable="false" />
+          <Property Type="Guid" Name="TestTableId" />
+          <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TestTable">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Guid" Name="ID" Nullable="false" />
+          <Property Type="String" Name="c1" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="c2" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="c3" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="c4" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="c5" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="c6" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="c7" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="c8" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="Int64" Name="c9" />
+          <Property Type="String" Name="c10" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="c11" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="c12" Precision="18" Scale="0" />
+          <Property Type="String" Name="c13" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="Guid" Name="c14" />
+          <Property Type="Int32" Name="c15" />
+          <Property Type="Boolean" Name="c16" />
+          <Property Type="String" Name="c17" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="DateTime" Name="c18" Precision="3" />
+          <Property Type="Double" Name="c19" />
+          <Property Type="String" Name="c20" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EFModelStoreContainer" CdmEntityContainer="ITdosEntities" >
+          <EntitySetMapping Name="Product">
+            <EntityTypeMapping TypeName="EFModel.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="TestTableId" ColumnName="TestTableId" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TestTable">
+            <EntityTypeMapping TypeName="EFModel.TestTable">
+              <MappingFragment StoreEntitySet="TestTable">
+                <ScalarProperty Name="c20" ColumnName="c20" />
+                <ScalarProperty Name="c19" ColumnName="c19" />
+                <ScalarProperty Name="c18" ColumnName="c18" />
+                <ScalarProperty Name="c17" ColumnName="c17" />
+                <ScalarProperty Name="c16" ColumnName="c16" />
+                <ScalarProperty Name="c15" ColumnName="c15" />
+                <ScalarProperty Name="c14" ColumnName="c14" />
+                <ScalarProperty Name="c13" ColumnName="c13" />
+                <ScalarProperty Name="c12" ColumnName="c12" />
+                <ScalarProperty Name="c11" ColumnName="c11" />
+                <ScalarProperty Name="c10" ColumnName="c10" />
+                <ScalarProperty Name="c9" ColumnName="c9" />
+                <ScalarProperty Name="c8" ColumnName="c8" />
+                <ScalarProperty Name="c7" ColumnName="c7" />
+                <ScalarProperty Name="c6" ColumnName="c6" />
+                <ScalarProperty Name="c5" ColumnName="c5" />
+                <ScalarProperty Name="c4" ColumnName="c4" />
+                <ScalarProperty Name="c3" ColumnName="c3" />
+                <ScalarProperty Name="c2" ColumnName="c2" />
+                <ScalarProperty Name="c1" ColumnName="c1" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
